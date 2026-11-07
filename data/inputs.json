@@ -1,0 +1,639 @@
+{
+  "_comment": "Single source of truth for every assumption. EUR millions unless stated. Each array holds six periods: H2-26 stub, FY27, FY28, FY29, FY30, FY31. Rates are annualised.",
+  "scenarios": [
+    "Base",
+    "Downside",
+    "Plan"
+  ],
+  "periods": [
+    "H2-26",
+    "FY27",
+    "FY28",
+    "FY29",
+    "FY30",
+    "FY31"
+  ],
+  "period_end": [
+    "2026-12-31",
+    "2027-12-31",
+    "2028-12-31",
+    "2029-12-31",
+    "2030-12-31",
+    "2031-12-31"
+  ],
+  "period_length": [
+    0.5,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "closing_date": "2026-06-30",
+  "deal": {
+    "arr_entry": 50.0,
+    "france_share": 0.8,
+    "post_money": 350.0,
+    "bp_equity": 150.0,
+    "reinvest_equity": 50.0,
+    "unitranche": 40.0,
+    "line_commitment": 25.0,
+    "primary_cash": 60.0,
+    "existing_cash": 8.0,
+    "deal_fee_pct": 0.025,
+    "oid_pct": 0.02,
+    "min_cash": 10.0
+  },
+  "financing": {
+    "euribor": 0.0232,
+    "margin": 0.065,
+    "commitment_fee_share": 0.35,
+    "cash_yield_spread": 0.005
+  },
+  "tax": {
+    "rate": 0.2583,
+    "nol_opening": 32.0,
+    "nol_free": 1.0,
+    "nol_excess_share": 0.5,
+    "interest_floor": 3.0,
+    "interest_cap_pct": 0.3
+  },
+  "exit": {
+    "cost_pct": 0.015,
+    "mip_share": 0.1,
+    "mip_hurdle_moic": 1.5
+  },
+  "market": {
+    "dau_entry_m": 0.7,
+    "yield_growth": 0.03,
+    "france_frontline_m": 12.0,
+    "loaded_cost_per_fte_k": 80.0,
+    "personnel_share": 0.75
+  },
+  "calibration": {
+    "ltm_new_france": 12.0,
+    "ltm_new_intl": 3.5,
+    "ltm_upsell": 3.6,
+    "headcount": 400,
+    "arr_dec_2025": 40.0,
+    "ltm_gross_margin": 0.78,
+    "ltm_cs_pct": 0.05,
+    "ltm_rd_pct": 0.2,
+    "ltm_ga_pct": 0.11,
+    "ltm_cac_france": 0.95,
+    "ltm_cac_intl": 1.5,
+    "ltm_cac_upsell": 0.25,
+    "growth_ltm": 0.4
+  },
+  "drivers": {
+    "grr_france": {
+      "Base": [
+        0.86,
+        0.86,
+        0.86,
+        0.86,
+        0.87,
+        0.87
+      ],
+      "Downside": [
+        0.82,
+        0.8,
+        0.8,
+        0.8,
+        0.8,
+        0.8
+      ],
+      "Plan": [
+        0.87,
+        0.88,
+        0.88,
+        0.89,
+        0.89,
+        0.89
+      ]
+    },
+    "grr_intl": {
+      "Base": [
+        0.82,
+        0.82,
+        0.83,
+        0.84,
+        0.85,
+        0.85
+      ],
+      "Downside": [
+        0.77,
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ],
+      "Plan": [
+        0.83,
+        0.84,
+        0.85,
+        0.86,
+        0.87,
+        0.87
+      ]
+    },
+    "upsell_france": {
+      "Base": [
+        0.1,
+        0.1,
+        0.1,
+        0.09,
+        0.08,
+        0.08
+      ],
+      "Downside": [
+        0.06,
+        0.05,
+        0.04,
+        0.04,
+        0.04,
+        0.04
+      ],
+      "Plan": [
+        0.11,
+        0.12,
+        0.12,
+        0.12,
+        0.11,
+        0.1
+      ]
+    },
+    "upsell_intl": {
+      "Base": [
+        0.08,
+        0.08,
+        0.09,
+        0.09,
+        0.09,
+        0.08
+      ],
+      "Downside": [
+        0.05,
+        0.04,
+        0.04,
+        0.04,
+        0.04,
+        0.04
+      ],
+      "Plan": [
+        0.1,
+        0.11,
+        0.12,
+        0.12,
+        0.11,
+        0.1
+      ]
+    },
+    "new_france": {
+      "Base": [
+        13.0,
+        13.0,
+        13.5,
+        14.0,
+        14.0,
+        14.0
+      ],
+      "Downside": [
+        11.0,
+        9.0,
+        8.5,
+        8.0,
+        8.0,
+        8.0
+      ],
+      "Plan": [
+        14.0,
+        15.5,
+        17.0,
+        17.0,
+        17.0,
+        17.0
+      ]
+    },
+    "new_intl": {
+      "Base": [
+        4.0,
+        5.5,
+        7.0,
+        8.5,
+        9.5,
+        10.0
+      ],
+      "Downside": [
+        3.5,
+        4.0,
+        4.0,
+        4.5,
+        4.5,
+        4.5
+      ],
+      "Plan": [
+        5.0,
+        7.5,
+        10.0,
+        12.0,
+        14.0,
+        15.0
+      ]
+    },
+    "cac_france": {
+      "Base": [
+        0.95,
+        0.95,
+        1.0,
+        1.0,
+        1.05,
+        1.05
+      ],
+      "Downside": [
+        1.05,
+        1.15,
+        1.2,
+        1.25,
+        1.25,
+        1.25
+      ],
+      "Plan": [
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95,
+        0.95
+      ]
+    },
+    "cac_intl": {
+      "Base": [
+        1.5,
+        1.5,
+        1.45,
+        1.4,
+        1.35,
+        1.3
+      ],
+      "Downside": [
+        1.7,
+        1.8,
+        1.8,
+        1.75,
+        1.7,
+        1.7
+      ],
+      "Plan": [
+        1.45,
+        1.4,
+        1.3,
+        1.25,
+        1.2,
+        1.15
+      ]
+    },
+    "cac_upsell": {
+      "Base": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "Downside": [
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "Plan": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "gross_margin": {
+      "Base": [
+        0.78,
+        0.785,
+        0.79,
+        0.795,
+        0.8,
+        0.8
+      ],
+      "Downside": [
+        0.77,
+        0.77,
+        0.77,
+        0.77,
+        0.77,
+        0.77
+      ],
+      "Plan": [
+        0.78,
+        0.79,
+        0.8,
+        0.81,
+        0.81,
+        0.81
+      ]
+    },
+    "cs_fixed_pct": {
+      "Base": [
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05
+      ],
+      "Downside": [
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05
+      ],
+      "Plan": [
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05
+      ]
+    },
+    "rd_pct": {
+      "Base": [
+        0.24,
+        0.26,
+        0.24,
+        0.21,
+        0.19,
+        0.18
+      ],
+      "Downside": [
+        0.24,
+        0.27,
+        0.27,
+        0.26,
+        0.25,
+        0.24
+      ],
+      "Plan": [
+        0.24,
+        0.25,
+        0.23,
+        0.2,
+        0.18,
+        0.17
+      ]
+    },
+    "ga_pct": {
+      "Base": [
+        0.11,
+        0.11,
+        0.105,
+        0.1,
+        0.095,
+        0.09
+      ],
+      "Downside": [
+        0.11,
+        0.12,
+        0.125,
+        0.125,
+        0.12,
+        0.12
+      ],
+      "Plan": [
+        0.11,
+        0.105,
+        0.1,
+        0.095,
+        0.09,
+        0.085
+      ]
+    },
+    "acquired_arr": {
+      "Base": [
+        0.0,
+        0.0,
+        10.0,
+        10.0,
+        0.0,
+        0.0
+      ],
+      "Downside": [
+        0.0,
+        0.0,
+        10.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "Plan": [
+        0.0,
+        0.0,
+        10.0,
+        15.0,
+        10.0,
+        0.0
+      ]
+    },
+    "ma_multiple": {
+      "Base": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "Downside": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "Plan": [
+        5.5,
+        5.5,
+        5.5,
+        5.5,
+        5.5,
+        5.5
+      ]
+    },
+    "acquired_growth": {
+      "Base": [
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "Downside": [
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05
+      ],
+      "Plan": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ]
+    },
+    "acquired_margin": {
+      "Base": [
+        0.15,
+        0.15,
+        0.15,
+        0.2,
+        0.25,
+        0.25
+      ],
+      "Downside": [
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "Plan": [
+        0.15,
+        0.15,
+        0.2,
+        0.25,
+        0.25,
+        0.25
+      ]
+    }
+  },
+  "constants_by_scenario": {
+    "integration_pct": {
+      "Base": 0.08,
+      "Downside": 0.08,
+      "Plan": 0.08
+    },
+    "exit_adj": {
+      "Base": 0.0,
+      "Downside": 0.0,
+      "Plan": 0.0
+    }
+  },
+  "cash_items": {
+    "services_pct": 0.02,
+    "capex_pct": 0.015,
+    "nwc_pct_delta_arr": 0.25,
+    "cir_pct_rd": 0.03
+  },
+  "hurdle": {
+    "moic": 3.0,
+    "irr": 0.25
+  },
+  "r40_curve": {
+    "_source": "SaasRise Q1 2026 band medians placed at band midpoints; straight lines between them",
+    "x": [
+      10,
+      25,
+      35,
+      45,
+      55,
+      65
+    ],
+    "y": [
+      2.5,
+      3.5,
+      5.0,
+      7.0,
+      9.5,
+      12.0
+    ]
+  },
+  "next_buyer": {
+    "target_irr": 0.2,
+    "exit_ebitda_multiple": 15.0,
+    "debt_x_ebitda": 6.0,
+    "interest_rate": 0.0882,
+    "fcf_conversion": 0.55,
+    "growth_fade": 0.01,
+    "growth_floor": 0.05,
+    "margin_step": 0.02,
+    "margin_cap": 0.32,
+    "years": 5
+  },
+  "references": {
+    "dayforce_value_usd_m": 12300,
+    "dayforce_q2_revenue_usd_m": 464.7,
+    "planday_price_m": 183.5,
+    "planday_users_m": 0.35,
+    "hcr_staff_m": 0.7974,
+    "customers": 30000,
+    "fund_size_m": 2800
+  },
+  "weights": {
+    "Downside": 0.25,
+    "Base": 0.5,
+    "Plan": 0.25
+  },
+  "accounts_2024": {
+    "_source": "Skello SAS statutory accounts, FY2023 and FY2024, audited (Cauchy-Chaumont & Associes). EUR millions.",
+    "revenue_2023": 17.962,
+    "revenue_2024": 25.393,
+    "revenue_france_2024": 21.601,
+    "operating_result_2023": -8.914,
+    "operating_result_2024": -3.858,
+    "da_2023": 0.531,
+    "da_2024": 0.64,
+    "net_provisions_2023": 0.942,
+    "net_provisions_2024": 0.637,
+    "capitalised_dev_2023": 0.43,
+    "capitalised_dev_2024": 1.885,
+    "net_result_2024": -3.539,
+    "cash_2023": 12.471,
+    "cash_2024": 8.392,
+    "bank_debt_2024": 4.208,
+    "deferred_revenue_2023": 5.436,
+    "deferred_revenue_2024": 8.873,
+    "doubtful_receivables_2024": 3.262,
+    "bad_debt_charge_2024": 0.922,
+    "tax_credits_2024": 0.15,
+    "headcount_avg_2024": 202,
+    "personnel_cost_2024": 17.967,
+    "iberia_revenue_2024": 3.484,
+    "iberia_result_2024": -2.828,
+    "loans_to_iberia_2024": 5.199,
+    "accumulated_losses_2024": 31.801,
+    "founders_stake": 0.3444,
+    "partech_stake": 0.2467,
+    "xange_stake": 0.1441,
+    "bank_debt_2023": 5.468
+  },
+  "pre_accounts": {
+    "_comment": "Assumptions used before the 2024 filed accounts were read; kept to show what the accounts changed.",
+    "existing_cash": 15.0,
+    "nol_opening": 40.0,
+    "nwc_pct_delta_arr": 0.05,
+    "cir_pct_rd": 0.1
+  }
+}

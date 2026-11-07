@@ -1,0 +1,7 @@
+outputs/analysis_log.txt
+__pycache__/
+.pytest_cache/
+memo/*.log
+memo/*.aux
+memo/*.out
+memo/figures/*.png
