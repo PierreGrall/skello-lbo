@@ -6,7 +6,7 @@ An outside-in look at Bridgepoint Development Capital's July 2026 investment in 
 
 ## The short version
 
-- From public sources alone, the deal does not reach a 3.0x reference at about €350M post-money on ordinary shares. My Base case returns about 2.1x and 18% at a December 2030 exit, and my Downside about 0.5x.
+- From public sources alone, I cannot get the deal to my 3.0x reference at about €350M post-money on ordinary shares. My Base case returns about 2.1x and 18% at a December 2030 exit, and my Downside about 0.5x.
 - That gap measures what an outsider cannot see. Two answers would matter most in diligence: French gross retention and the instrument. Retention near 90% with a 1x senior preference on the new money gives about 2.5x.
 - 2.5x on price alone needs about €294M post-money, below the range the press allows.
 - The exit is the weak point: Base's €804M is about 26x EBITDA, while a sponsor underwriting a 15x exit could pay about €658M.
